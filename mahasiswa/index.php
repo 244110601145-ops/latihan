@@ -428,7 +428,7 @@ $data=$db->query($sql);
                       <!--begin::Col-->
                 <div class="card">
                   <!--begin::Card Header-->
-                 <a href="./?p=add-mhs" class="btn btn-success btn-sm" style="width: 110px">+ Mahasiwa</a>
+                 
 </td><td width="50"></td><td>
   <form method="post" action="#">
     <input type="text" name="keyword" placeholder="Masukkan kata kunci" value ='<?=$keyword?>'>
@@ -574,7 +574,7 @@ if (isset($_POST['cari'])){
         // loop through each option themeBg array
         document.querySelector('#sidebar-color').innerHTML = themeBg.map((bg) => {
           // return option element with value and text
-          return `<option value="${bg}" class="text-${bg}">${bg}</option>`;
+          return <option value="${bg}" class="text-${bg}">${bg}</option>;
         });
 
         let sidebarColorMode = '';
@@ -583,7 +583,7 @@ if (isset($_POST['cari'])){
         function updateSidebar() {
           appSidebar.setAttribute('data-bs-theme', sidebarColorMode);
 
-          sidebarColorCode.innerHTML = `<pre><code class="language-html">&lt;aside class="app-sidebar ${sidebarBg}" data-bs-theme="${sidebarColorMode}"&gt;...&lt;/aside&gt;</code></pre>`;
+          sidebarColorCode.innerHTML = <pre><code class="language-html">&lt;aside class="app-sidebar ${sidebarBg}" data-bs-theme="${sidebarColorMode}"&gt;...&lt;/aside&gt;</code></pre>;
         }
 
         sidebarColorModes.addEventListener('input', (event) => {
@@ -640,7 +640,7 @@ if (isset($_POST['cari'])){
         // loop through each option themeBg array
         document.querySelector('#navbar-color').innerHTML = themeBg.map((bg) => {
           // return option element with value and text
-          return `<option value="${bg}" class="text-${bg}">${bg}</option>`;
+          return <option value="${bg}" class="text-${bg}">${bg}</option>;
         });
 
         let navbarColorMode = '';
@@ -648,7 +648,7 @@ if (isset($_POST['cari'])){
 
         function updateNavbar() {
           appNavbar.setAttribute('data-bs-theme', navbarColorMode);
-          navbarColorCode.innerHTML = `<pre><code class="language-html">&lt;nav class="app-header navbar navbar-expand ${navbarBg}" data-bs-theme="${navbarColorMode}"&gt;...&lt;/nav&gt;</code></pre>`;
+          navbarColorCode.innerHTML = <pre><code class="language-html">&lt;nav class="app-header navbar navbar-expand ${navbarBg}" data-bs-theme="${navbarColorMode}"&gt;...&lt;/nav&gt;</code></pre>;
         }
 
         navbarColorModes.addEventListener('input', (event) => {
@@ -705,7 +705,7 @@ if (isset($_POST['cari'])){
         // loop through each option themeBg array
         document.querySelector('#footer-color').innerHTML = themeBg.map((bg) => {
           // return option element with value and text
-          return `<option value="${bg}" class="text-${bg}">${bg}</option>`;
+          return <option value="${bg}" class="text-${bg}">${bg}</option>;
         });
 
         let footerColorMode = '';
@@ -713,7 +713,7 @@ if (isset($_POST['cari'])){
 
         function updateFooter() {
           appFooter.setAttribute('data-bs-theme', footerColorMode);
-          footerColorCode.innerHTML = `<pre><code class="language-html">&lt;footer class="app-footer ${footerBg}" data-bs-theme="${footerColorMode}"&gt;...&lt;/footer&gt;</code></pre>`;
+          footerColorCode.innerHTML = <pre><code class="language-html">&lt;footer class="app-footer ${footerBg}" data-bs-theme="${footerColorMode}"&gt;...&lt;/footer&gt;</code></pre>;
         }
 
         footerColorModes.addEventListener('input', (event) => {
