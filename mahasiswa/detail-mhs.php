@@ -13,7 +13,7 @@ $data=$db->query($sql);
             <!--begin::Row-->
             <div class="row">
               <!--begin::Col-->
-              <div class="col-sm-6"><h3 class="mb-0">Detail Mahasiswa</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">Detail MHS</h3></div>
               <!--end::Col-->
               <!--begin::Col-->
               <div class="col-sm-6">
